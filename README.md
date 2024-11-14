@@ -37,7 +37,7 @@ Run the script twice. Cancel the first run after it stops logging in case it doe
 - For any issues or questions, please refer to the documentation or open an issue on this repository.
 
 ## Key points
-- This script is done considering that I have another script `assume_role.sh` that creates a profile as temporary session with the token. Thats why you will see often using AWS_PROFILE and --no-verify-ssl. You can change that and hardcode your AWS CodeArtifact Authentication Token. If you want to use the script, change AWS_PROFILE to `temporar-session`
+- This script is done considering that I have another script `assume_role.sh` that creates a profile as temporary session with the token. Thats why you will see often using `AWS_PROFILE` and `--no-verify-ssl`. You can change that and hardcode your AWS CodeArtifact Authentication Token. If you want to use the `assume_role.sh` script, change AWS_PROFILE to `temporary-session`
 
 - To upload to AWSCodeArtifact you will need a AWS Token. Modify the following part in case you don't want to NOT verify ssl or to hardcode your AWS Authentication token
 ```
