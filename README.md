@@ -20,7 +20,9 @@ Before running the script, ensure the following are installed and configured:
 ## Execution Steps
 
 1. Update the variables `NEXUS_REPO` and `NEXUS_GROUP_ID` in the script accordingly.
-2. Run the script using the command: 
+2. Update any other variable if needed
+3. If you use the assume_role.sh script, you may change the role defined within. And then, execute `./assume_role.sh dev`
+4. Run the script using the command: 
    ```
    sh python3 nexusToAwsCodeArtifact.py
    ```
@@ -35,7 +37,7 @@ Run the script twice. Cancel the first run after it stops logging in case it doe
 - For any issues or questions, please refer to the documentation or open an issue on this repository.
 
 ## Key points
-- This script is done considering that I have another script that creates a profile as temporary session with the token. Thats why you will see often using AWS_PROFILE and --no-verify-ssl. You can change that and hardcode your AWS CodeArtifact Authentication Token.
+- This script is done considering that I have another script `assume_role.sh` that creates a profile as temporary session with the token. Thats why you will see often using AWS_PROFILE and --no-verify-ssl. You can change that and hardcode your AWS CodeArtifact Authentication Token. If you want to use the script, change AWS_PROFILE to `temporar-session`
 
 - To upload to AWSCodeArtifact you will need a AWS Token. Modify the following part in case you don't want to NOT verify ssl or to hardcode your AWS Authentication token
 ```
