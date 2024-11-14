@@ -29,7 +29,7 @@ Before running the script, ensure the following are installed and configured:
 or through your IDE.
 
 ## Execution Scenarios
-Run the script twice. Cancel the first run after it stops logging in case it does not (it has a 300s timeout per thread, ti should stop). The second execution will finish and clean up temporary files.
+Run the script twice. Cancel the first run after it stops logging in case it does not (it has a 300s timeout per thread, it should stop). The second execution will finish and clean up temporary files.
 
 ## Additional Information
 - Ensure you have the necessary permissions to access both Nexus and AWS CodeArtifact.
