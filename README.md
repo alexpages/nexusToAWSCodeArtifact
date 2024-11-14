@@ -1,6 +1,6 @@
 # Nexus to AWS CodeArtifact Migration Script
 
-This script migrates artifacts from Nexus to AWS CodeArtifact.
+This script migrates maven artifacts from Nexus to AWS CodeArtifact.
 
 ## Nexus Repository Structure
 
